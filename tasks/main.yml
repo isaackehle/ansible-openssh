@@ -1,0 +1,15 @@
+---
+  #
+  # Check which local files exist
+  #
+  - name: Ensure local_ssh_path exists {{ local_ssh_path }}
+    local_action: file path={{ local_ssh_path }} state=directory # owner={{ sc_owner }} group={{ sc_group }} mode={{ sc_mode }}
+    become: no
+
+  - name: Copy SSH Config files from server to local
+    fetch: src="{{ ssh_path_remote }}/{{ item }}" dest="{{ ssh_path_local }}/{{ item }}" flat=yes
+    become: true
+    with_items:
+      "{{ssh_config_files}}"
+    when:
+      copy_action == "pull"
