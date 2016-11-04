@@ -9,19 +9,21 @@ Available on Ansible Galaxy: [pgkehle.ssh-config-copy](https://galaxy.ansible.co
 ## Pull from a server 
 
 ```YAML
- - hosts: all
-   roles:
-     - pgkehle.ssh-config-copy
-       copy_action: pull
+- hosts: all
+  roles:
+    - { role: pgkehle.ssh-config-copy,
+        local_path_base: ~/private/certs,
+        copy_action: "pull" }
 ```
 
 ## Push from a server 
 
 ```YAML
- - hosts: all
-   roles:
-     - pgkehle.ssh-config-copy
-       copy_action: push
+- hosts: all
+  roles:
+    - { role: pgkehle.ssh-config-copy,
+        local_path_base: ~/private/certs,
+        copy_action: "push" }
 ```
 
 ## License
