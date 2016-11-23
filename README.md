@@ -13,7 +13,7 @@ Available on Ansible Galaxy: [pgkehle.ssh-config-copy](https://galaxy.ansible.co
   roles:
     - { role: pgkehle.ssh-config-copy,
         local_path_base: ~/private/certs,
-        copy_action: "pull" }
+        tags: ["pull"] }
 ```
 
 ## Push from a server 
@@ -23,7 +23,7 @@ Available on Ansible Galaxy: [pgkehle.ssh-config-copy](https://galaxy.ansible.co
   roles:
     - { role: pgkehle.ssh-config-copy,
         local_path_base: ~/private/certs,
-        copy_action: "push" }
+        tags: ["push"] }
 ```
 
 ## License
