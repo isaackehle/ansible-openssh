@@ -2,4 +2,3 @@
 
   local_path_base: "~/private"
   local_ssh_path: "{{ local_path_base }}/{{ server_fqdn }}/ssh"
-  copy_action: "none"

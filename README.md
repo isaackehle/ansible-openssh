@@ -1,8 +1,8 @@
-# Ansible: ssh-config-copy
+# Ansible: ssh-keys
 
 Push or Pull SSH configuration to/from a server
 
-Available on Ansible Galaxy: [pgkehle.ssh-config-copy](https://galaxy.ansible.com/pgkehle/ssh-config-copy)
+Available on Ansible Galaxy: [pgkehle.ssh-keys](https://galaxy.ansible.com/pgkehle/ssh-keys)
 
 # Examples
 
@@ -11,9 +11,9 @@ Available on Ansible Galaxy: [pgkehle.ssh-config-copy](https://galaxy.ansible.co
 ```YAML
 - hosts: all
   roles:
-    - { role: pgkehle.ssh-config-copy,
+    - { role: pgkehle.ssh-keys,
         local_path_base: ~/private/certs,
-        copy_action: "pull" }
+        tags: ["pull"] }
 ```
 
 ## Push from a server 
@@ -21,9 +21,9 @@ Available on Ansible Galaxy: [pgkehle.ssh-config-copy](https://galaxy.ansible.co
 ```YAML
 - hosts: all
   roles:
-    - { role: pgkehle.ssh-config-copy,
+    - { role: pgkehle.ssh-keys,
         local_path_base: ~/private/certs,
-        copy_action: "push" }
+        tags: ["push"] }
 ```
 
 ## License
