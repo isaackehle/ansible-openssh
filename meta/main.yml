@@ -1,6 +1,6 @@
 galaxy_info:
   author: Paul Kehle <twitter.com/pgkehle>
-  description: SSL Certificates
+  description: Push or Pull SSH configuration to/from a server
   company: pgkehle
   license: MIT
   min_ansible_version: 1.9
