@@ -1,0 +1,23 @@
+{
+  "name": "ansible-ssh-keys",
+  "version": "0.9.9",
+  "description": "Push or Pull SSH configuration to/from a server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgkehle/ansible-ssh-keys.git"
+  },
+  "author": "Paul Kehle (pgkehle@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgkehle/ansible-ssh-keys/issues"
+  },
+  "homepage": "https://github.com/pgkehle/ansible-ssh-keys#readme",
+  "main": "tasks/main.yml",
+  "keywords": [
+    "ansible"
+  ]
+}
