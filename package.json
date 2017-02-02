@@ -1,6 +1,6 @@
 {
   "name": "ansible-ssh-keys",
-  "version": "0.9.9",
+  "version": "1.0.0",
   "description": "Push or Pull SSH configuration to/from a server",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
