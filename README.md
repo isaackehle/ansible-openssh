@@ -1,8 +1,8 @@
-# Ansible: ssh-keys
+# Ansible: openssh
 
-Push or Pull SSH configuration to/from a server
+Push or Pull OpenSSH configuration to/from a server
 
-Available on Ansible Galaxy: [pgkehle.ssh-keys](https://galaxy.ansible.com/pgkehle/ssh-keys)
+Available on Ansible Galaxy: [pgkehle.openssh](https://galaxy.ansible.com/pgkehle/openssh)
 
 # Examples
 
@@ -11,7 +11,7 @@ Available on Ansible Galaxy: [pgkehle.ssh-keys](https://galaxy.ansible.com/pgkeh
 ```YAML
 - hosts: all
   roles:
-    - { role: pgkehle.ssh-keys,
+    - { role: pgkehle.openssh,
         local_path_base: ~/private/certs,
         tags: ["pull"] }
 ```
@@ -21,7 +21,7 @@ Available on Ansible Galaxy: [pgkehle.ssh-keys](https://galaxy.ansible.com/pgkeh
 ```YAML
 - hosts: all
   roles:
-    - { role: pgkehle.ssh-keys,
+    - { role: pgkehle.openssh,
         local_path_base: ~/private/certs,
         tags: ["push"] }
 ```

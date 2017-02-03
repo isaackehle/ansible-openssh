@@ -1,21 +1,21 @@
 {
-  "name": "ansible-ssh-keys",
+  "name": "ansible-openssh",
   "version": "1.0.0",
-  "description": "Push or Pull SSH configuration to/from a server",
+  "description": "Push or Pull OpenSSH configuration to/from a server",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pgkehle/ansible-ssh-keys.git"
+    "url": "git+https://github.com/pgkehle/ansible-openssh.git"
   },
   "author": "Paul Kehle (pgkehle@gmail.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pgkehle/ansible-ssh-keys/issues"
+    "url": "https://github.com/pgkehle/ansible-openssh/issues"
   },
-  "homepage": "https://github.com/pgkehle/ansible-ssh-keys#readme",
+  "homepage": "https://github.com/pgkehle/ansible-openssh#readme",
   "main": "tasks/main.yml",
   "keywords": [
     "ansible"

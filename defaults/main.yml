@@ -1,4 +1,6 @@
 ---
 
-  local_path_base: "~/private"
-  local_ssh_path: "{{ local_path_base }}/{{ server_fqdn }}/ssh"
+local_path_base:  "~/private"
+
+do_push:    false
+do_pull:    false
