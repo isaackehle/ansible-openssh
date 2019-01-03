@@ -1,6 +1,6 @@
 ---
 - name: Ensure local_ssh_path exists {{ local_ssh_path }}
-  local_action: file path={{ local_ssh_path }} state=directory # owner={{ sc_owner }} group={{ sc_group }} mode={{ sc_mode }}
+  local_action: file path={{ local_ssh_path }} state=directory
   become: false
   tags:
     - always
