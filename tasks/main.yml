@@ -1,6 +1,9 @@
 ---
 - name: Ensure local_ssh_path exists {{ local_ssh_path }}
-  local_action: file path={{ local_ssh_path }} state=directory
+  file: 
+    path: '{{ local_ssh_path }}' 
+    state: directory
+  connection: local
   become: false
   tags:
     - always
