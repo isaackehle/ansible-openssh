@@ -1,7 +1,7 @@
 ---
 - name: Ensure local_ssh_path exists {{ local_ssh_path }}
-  file: 
-    path: '{{ local_ssh_path }}' 
+  file:
+    path: "{{ local_ssh_path }}"
     state: directory
   connection: local
   become: false
@@ -10,20 +10,20 @@
 
 - name: Pull SSH Config files from server to local
   synchronize:
-    src: "{{ ssh_path_remote }}/{{ item }}" 
-    dest: "{{ local_ssh_path }}/{{ item }}" 
+    src: "{{ ssh_path_remote }}/{{ item }}"
+    dest: "{{ local_ssh_path }}/{{ item }}"
   become: true
   with_items: "{{ ssh_config_files }}"
-  when: do_pull == true
+  when: do_pull
   tags:
     - pull
 
 - name: Push SSH Config files from local to server
   synchronize:
-    src: "{{ local_ssh_path }}/{{ item }}" 
+    src: "{{ local_ssh_path }}/{{ item }}"
     dest: "{{ ssh_path_remote }}/{{ item }}"
   become: true
   with_items: "{{ ssh_config_files }}"
-  when: do_push == true
+  when: do_push
   tags:
     - push
