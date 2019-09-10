@@ -1,5 +1,4 @@
 ---
-
 ssh_config_files:
   - ssh_host_dsa_key
   - ssh_host_dsa_key.pub
@@ -12,4 +11,4 @@ ssh_config_files:
 
 ssh_path_remote: "/etc/ssh"
 
-local_ssh_path:   "{{ local_path_base }}/{{ server_fqdn }}/ssh"
+local_ssh_path: "{{ local_path_base }}/{{ fqdn }}/ssh"

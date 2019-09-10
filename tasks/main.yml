@@ -3,7 +3,7 @@
   file:
     path: "{{ local_ssh_path }}"
     state: directory
-  connection: local
+  delegate_to: localhost
   become: false
   tags:
     - always
