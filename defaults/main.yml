@@ -1,5 +1,4 @@
 ---
-local_path_base: "~/private"
-
+local_path_base: ""
 do_push: false
 do_pull: false
