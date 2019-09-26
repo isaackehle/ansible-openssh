@@ -6,7 +6,7 @@ Available on Ansible Galaxy: [pgkehle.openssh](https://galaxy.ansible.com/pgkehl
 
 # Examples
 
-## Pull from a server 
+## Pull from a server
 
 ```YAML
 - hosts: all
@@ -16,7 +16,7 @@ Available on Ansible Galaxy: [pgkehle.openssh](https://galaxy.ansible.com/pgkehl
         tags: ["pull"] }
 ```
 
-## Push from a server 
+## Push from a server
 
 ```YAML
 - hosts: all
@@ -34,4 +34,3 @@ MIT
 
 Paul Kehle  
 @pgkehle ([twitter](https://twitter.com/pgkehle), [github](https://github.com/pgkehle), [linkedin](https://www.linkedin.com/in/pgkehle))
-
