@@ -1,6 +1,6 @@
 {
   "name": "ansible-openssh",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Push or Pull OpenSSH configuration to/from a server",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
