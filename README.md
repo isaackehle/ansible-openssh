@@ -4,11 +4,11 @@ Push or Pull OpenSSH configuration to/from a server
 
 Available on Ansible Galaxy: [pgkehle.openssh](https://galaxy.ansible.com/pgkehle/openssh)
 
-# Examples
+## Examples
 
-## Pull from a server 
+### Pull from a server
 
-```YAML
+```yaml
 - hosts: all
   roles:
     - { role: pgkehle.openssh,
@@ -16,14 +16,21 @@ Available on Ansible Galaxy: [pgkehle.openssh](https://galaxy.ansible.com/pgkehl
         tags: ["pull"] }
 ```
 
-## Push from a server 
+### Push from a server
 
-```YAML
+```yaml
 - hosts: all
   roles:
     - { role: pgkehle.openssh,
         local_path_base: ~/private/certs,
         tags: ["push"] }
+```
+
+## Linting
+
+```bash
+yamllint -c yamllint.yaml .
+ansible-lint .
 ```
 
 ## License
@@ -34,4 +41,3 @@ MIT
 
 Paul Kehle  
 @pgkehle ([twitter](https://twitter.com/pgkehle), [github](https://github.com/pgkehle), [linkedin](https://www.linkedin.com/in/pgkehle))
-
