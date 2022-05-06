@@ -2,7 +2,7 @@
 
 Push or Pull OpenSSH configuration to/from a server
 
-Available on Ansible Galaxy: [pgkehle.openssh](https://galaxy.ansible.com/pgkehle/openssh)
+Available on Ansible Galaxy: [isaackehle.openssh](https://galaxy.ansible.com/isaackehle/openssh)
 
 ## Examples
 
@@ -11,9 +11,7 @@ Available on Ansible Galaxy: [pgkehle.openssh](https://galaxy.ansible.com/pgkehl
 ```yaml
 - hosts: all
   roles:
-    - { role: pgkehle.openssh,
-        local_path_base: ~/private/certs,
-        tags: ["pull"] }
+    - { role: isaackehle.openssh, local_path_base: ~/private/certs, tags: ["pull"] }
 ```
 
 ### Push from a server
@@ -21,9 +19,7 @@ Available on Ansible Galaxy: [pgkehle.openssh](https://galaxy.ansible.com/pgkehl
 ```yaml
 - hosts: all
   roles:
-    - { role: pgkehle.openssh,
-        local_path_base: ~/private/certs,
-        tags: ["push"] }
+    - { role: isaackehle.openssh, local_path_base: ~/private/certs, tags: ["push"] }
 ```
 
 ## Linting
@@ -39,5 +35,5 @@ MIT
 
 ## Author Information
 
-Paul Kehle  
-@pgkehle ([twitter](https://twitter.com/pgkehle), [github](https://github.com/pgkehle), [linkedin](https://www.linkedin.com/in/pgkehle))
+Isaac Kehle
+@isaackehle ([twitter](https://twitter.com/isaackehle), [github](https://github.com/isaackehle), [linkedin](https://www.linkedin.com/in/isaackehle))
